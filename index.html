@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./emblem.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./webfonts/all.min.css">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <audio id="audio-player"></audio>
+
+            <h2 id="music-name" class="music-name"></h2>
+            <p id="music-author" class="music-author"></p>
+
+            <div class="player-progress">
+                <div class="progress-values">
+                    <span id="player-current-time">--:--</span>
+                    <span id="player-duration">--:--</span>
+                </div>
+                <progress id="player-progress"></progress>
+            </div>
+
+            <div class="player-buttons">
+                <button id="btn-prev" class="btn btn-prev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button id="btn-play" class="btn btn-play">
+                    <i id="btn-play-icon" class="fas fa-play"></i>
+                </button>
+                <button id="btn-next" class="btn btn-next">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
